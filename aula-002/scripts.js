@@ -1,7 +1,7 @@
 const nome = document.querySelector(".name");
 const photo = document.querySelector(".photo");
 const age = document.querySelector(".age");
-const status = document.querySelector(".status");
+const state = document.querySelector(".state");
 const title = document.querySelector(".title");
 const descriptions = document.querySelector(".descriptions");
 const links = document.querySelector(".links");
@@ -12,7 +12,7 @@ const band = document.querySelector(".band");
 
 nome.innerHTML = "Augusto Braga";
 age.innerHTML = "Idade: 24 anos";
-status.innerHTML = "Estado civil: Solteiro";
+state.innerHTML = "Estado: São Paulo";
 title.innerHTML = "Iron Maiden";
 descriptions.innerHTML =
   "Iron Maiden é uma banda de heavy metal inglesa fundada em 1975. Minhas musicas favoritas são: Where Eagles Dare, Phantom of the Opera, The Evil That Man Do";
