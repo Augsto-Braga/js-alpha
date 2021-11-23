@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Exercicio JS</title>
+  </head>
+  <body>
+    <main>
+      <div class="form">
+        <h1>O que achou das lojas Braga?</h1>
+        <input type="text" id="name" placeholder="Digite seu nome" />
+        <div class="content">
+          <legend>Nota</legend>
+          <input type="radio" name="note" id="bom" value="Boa" />
+          <label for="bom">Bom</label>
+          <br />
+          <input type="radio" name="note" id="regular" value="Regular" />
+          <label for="regular">Regular</label>
+          <br />
+          <input type="radio" name="note" id="ruim" value="Ruim" />
+          <label for="ruim">Ruim</label>
+        </div>
+        <input type="submit" class="submit" onclick="showContent()" />
+      </div>
+      <div class="results"></div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
