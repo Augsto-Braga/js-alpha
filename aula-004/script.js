@@ -8,6 +8,7 @@ function showContent() {
     name,
     note,
   };
+
   for (let i = 0; i < note.length; i++) {
     if (note[i].checked) {
       user.name = username.value;
