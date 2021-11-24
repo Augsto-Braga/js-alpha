@@ -5,7 +5,6 @@ input {
 main {
   width: 100%;
   display: flex;
-  align-items: center;
 }
 
 main #name {
@@ -38,8 +37,15 @@ main .submit:hover {
   background-color: rgb(37, 0, 172);
 }
 
-main .results {
-  margin: 0 0 0 30px;
+main .show {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+main .show .results {
+  margin: 0 0 10px 30px;
+  padding: 20px;
   background-color: rgb(236, 234, 255);
   border: 1px solid gray;
   border-radius: 8px;

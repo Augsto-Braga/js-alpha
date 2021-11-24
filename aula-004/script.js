@@ -1,9 +1,10 @@
 const username = document.getElementById("name");
 const note = document.getElementsByName("note");
 const usersNote = [];
-const results = document.querySelector(".results");
+const show = document.querySelector(".show");
 
 function showContent() {
+  let results = document.createElement("div");
   let user = {
     name,
     note,
@@ -18,6 +19,10 @@ function showContent() {
 
   usersNote.push(user);
 
-  results.innerHTML = `<h2>Nome: ${user.name}</h2> <br />
-<h2>O que achou da loja: ${user.note}</h2>`;
+  show.appendChild(results);
+
+  results.setAttribute("class", "results");
+
+  results.innerHTML += `<h2>Nome: ${user.name}</h2>
+  <h2>O que achou da loja: ${user.note}</h2>`;
 }
