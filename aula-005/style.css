@@ -1,0 +1,83 @@
+body {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  width: 600px;
+  height: 600px;
+  background-color: rgb(106, 155, 255);
+}
+
+main .mheader {
+  margin: 20px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .inputs {
+  display: flex;
+  justify-content: space-around;
+}
+
+main .inputs .campos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .inputs .campos input {
+  border: none;
+  background-color: rgb(167, 196, 255);
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
+main .buttons {
+  margin: 50px 0 0 0;
+  display: flex;
+  justify-content: center;
+}
+
+main .buttons button {
+  margin: 0 10px;
+  width: 105px;
+  height: 50px;
+  background-color: blue;
+  color: white;
+  transition: 0.5s;
+}
+
+main .buttons button:hover {
+  background-color: rgb(0, 0, 112);
+}
+
+main .results {
+  margin: 20px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .results .rheader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .results .content {
+  width: 400px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(167, 196, 255);
+  border: 1px solid black;
+  border-radius: 8px;
+  font-size: 28px;
+}
