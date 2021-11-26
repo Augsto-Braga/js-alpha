@@ -1,0 +1,88 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #333333;
+}
+
+main .mheader {
+  text-align: center;
+  color: white;
+  font-weight: bolder;
+}
+
+main .form {
+  position: relative;
+}
+
+main .form fieldset {
+  width: 500px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #191919;
+  color: white;
+  border: 2px solid #bc2d29;
+  border-radius: 8px;
+}
+
+main .form fieldset legend {
+  font-weight: bold;
+}
+
+main .form fieldset input {
+  margin: 10px;
+}
+
+main .form button {
+  margin: 20px 10px 0 0;
+  padding: 7px 25px;
+  font-weight: bold;
+  background-color: #572220;
+  color: white;
+  border: none;
+  position: absolute;
+  right: 0;
+  transition: 0.5s;
+}
+
+main .form button:hover {
+  background-color: #bc2d29;
+}
+
+main .result {
+  margin: 70px 0 0 0;
+}
+
+main .result .price {
+  width: 500px;
+  height: 150px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #191919;
+  color: white;
+  border: 2px solid #bc2d29;
+  border-radius: 8px;
+}
+
+main .result .tab {
+  width: 500px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #191919;
+  color: white;
+  border: 2px solid #bc2d29;
+  border-radius: 8px;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <div class="mheader">
+        <h1>Gusto Burger</h1>
+      </div>
+      <div class="form">
+        <fieldset>
+          <legend>Opções de pão</legend>
+          <div class="item">
+            <input type="radio" name="bread" id="frances" value="3" />
+            <label for="frances">Pão Francês - R$3,00</label>
+          </div>
+          <div class="item">
+            <input type="radio" name="bread" id="australiano" value="8" />
+            <label for="australiano">Pão Australiano - R$8,00</label>
+          </div>
+          <div class="item">
+            <input type="radio" name="bread" id="brioche" value="6" />
+            <label for="brioche">Pão de Brioche - R$6,00</label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Opções de Hamburger</legend>
+          <div class="item">
+            <input type="radio" name="hamburger" id="picanha" value="13" />
+            <label for="picanha">Hamburger de Picanha - R$13,00</label>
+          </div>
+          <div class="item">
+            <input type="radio" name="hamburger" id="costela" value="10" />
+            <label for="costela">Hamburger de Costela - R$10,00</label>
+          </div>
+          <div class="item">
+            <input type="radio" name="hamburger" id="vegano" value="12" />
+            <label for="vegano">Hamburger Vegano - R$12,00</label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Opções de Salada</legend>
+          <div class="item">
+            <input type="radio" name="salad" id="alface" value="1.5" />
+            <label for="alface">Alface - R$1,50</label>
+          </div>
+          <div class="item">
+            <input type="radio" name="salad" id="tomate" value="1.5" />
+            <label for="tomate">Tomate - R$1,50</label>
+          </div>
+          <div class="item">
+            <input type="radio" name="salad" id="alfaTomate" value="3" />
+            <label for="alfaTomate">Alface e Tomate - R$3,00</label>
+          </div>
+          <div class="item">
+            <input type="radio" name="salad" id="sem" value="0" />
+            <label for="sem">Sem salada - R$0,00</label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Opções de Queijo</legend>
+          <div class="item">
+            <input type="radio" name="cheese" id="mussarela" value="3" />
+            <label for="mussarela">Mussarela - R$3,00</label>
+          </div>
+          <div class="item">
+            <input type="radio" name="cheese" id="prato" value="3" />
+            <label for="prato">Prato - R$3,00</label>
+          </div>
+          <div class="item">
+            <input type="radio" name="cheese" id="cheddar" value="5" />
+            <label for="cheddar">Cheddar - R$5,00</label>
+          </div>
+        </fieldset>
+        <button onclick="calculateValue()">Finalizar</button>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
