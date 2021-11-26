@@ -1,11 +1,11 @@
 const main = document.querySelector("main");
+const result = document.createElement("div");
 const price = document.createElement("div");
 const tab = document.createElement("div");
 const bread = document.getElementsByName("bread");
 const hamburger = document.getElementsByName("hamburger");
 const salad = document.getElementsByName("salad");
 const cheese = document.getElementsByName("cheese");
-const result = document.createElement("div");
 
 function calculateValue() {
   let total = 0;
