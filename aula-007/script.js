@@ -15,6 +15,7 @@ function fillBoard() {
       board.innerHTML = "";
       i = 0;
       boardErased += 1;
+      c -= 1;
     }
   }
 
