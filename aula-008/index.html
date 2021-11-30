@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Exercício Corrida</title>
+  </head>
+  <body>
+    <header>
+      <h1>Jogo de corrida!</h1>
+    </header>
+    <main>
+      <section>
+        <div class="content">
+          <h2>Carro 1</h2>
+          <h3>Velocidade mínima: 150km/h</h3>
+          <h3>Velocidade máxima: 230km/h</h3>
+          <h3>Derrapagem: 3%</h3>
+        </div>
+        <div class="content">
+          <h2>Carro 2</h2>
+          <h3>Velocidade mínima: 120km/h</h3>
+          <h3>Velocidade máxima: 260km/h</h3>
+          <h3>Derrapagem: 5%</h3>
+        </div>
+        <div class="content">
+          <h2>Carro 3</h2>
+          <h3>Velocidade mínima: 180km/h</h3>
+          <h3>Velocidade máxima: 220km/h</h3>
+          <h3>Derrapagem: 1%</h3>
+        </div>
+      </section>
+      <div class="laps">
+        <h2>Quantidade de voltas da corrida</h2>
+        <div class="buttons">
+          <button onclick="race(10)">10 voltas</button>
+          <button onclick="race(70)">70 voltas</button>
+          <button onclick="race(160)">160 voltas</button>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
