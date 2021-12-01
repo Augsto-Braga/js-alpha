@@ -48,14 +48,14 @@ function race(maxLaps) {
       pilot3win++;
     }
 
-    // console.log(
-    //   pilot1lap,
-    //   pilot1win,
-    //   pilot2lap,
-    //   pilot2win,
-    //   pilot3lap,
-    //   pilot3win
-    // );
+    console.log(
+      pilot1lap,
+      pilot1win,
+      pilot2lap,
+      pilot2win,
+      pilot3lap,
+      pilot3win
+    );
   }
 
   if (pilot3win < pilot1win && pilot1win === pilot2win) {
@@ -70,8 +70,8 @@ function race(maxLaps) {
     } else {
       pilot2win++;
     }
-    // console.log("VOLTA EXTRA!");
-    // console.log(pilot1lap, pilot1win, pilot2lap, pilot2win);
+    console.log("VOLTA EXTRA!");
+    console.log(pilot1lap, pilot1win, pilot2lap, pilot2win);
   } else if (pilot2win < pilot1win && pilot1win === pilot3win) {
     pilot1spd = ramdomNumber(pilot1.minSpeed, pilot1.maxSpeed);
     pilot1lap = pilot1spd - (pilot1.drift * pilot1spd) / 100;
@@ -84,22 +84,22 @@ function race(maxLaps) {
     } else {
       pilot3win++;
     }
-    // console.log("VOLTA EXTRA!");
-    // console.log(pilot1lap, pilot1win, pilot3lap, pilot3win);
+    console.log("VOLTA EXTRA!");
+    console.log(pilot1lap, pilot1win, pilot3lap, pilot3win);
   } else if (pilot1win < pilot3win && pilot3win === pilot2win) {
     pilot3spd = ramdomNumber(pilot3.minSpeed, pilot3.maxSpeed);
-    pilot3lap = pilot1spd - (pilot3.drift * pilot3spd) / 100;
+    pilot3lap = pilot3spd - (pilot3.drift * pilot3spd) / 100;
 
     pilot2spd = ramdomNumber(pilot2.minSpeed, pilot2.maxSpeed);
-    pilot2lap = pilot2spd - (pilot2.drift * pilot1spd) / 100;
+    pilot2lap = pilot2spd - (pilot2.drift * pilot2spd) / 100;
 
     if (pilot3lap > pilot2lap) {
       pilot3win++;
     } else {
       pilot2win++;
     }
-    // console.log("VOLTA EXTRA!");
-    // console.log(pilot2lap, pilot2win, pilot3lap, pilot3win);
+    console.log("VOLTA EXTRA!");
+    console.log(pilot2lap, pilot2win, pilot3lap, pilot3win);
   }
 
   if (pilot1win > pilot2win && pilot1win > pilot3win) {
