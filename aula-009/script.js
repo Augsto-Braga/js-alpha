@@ -6,41 +6,54 @@ let v4 = document.getElementById("v4");
 const showArray = document.createElement("div");
 const main = document.querySelector("main");
 
-function popArray() {
-  array = [v1.value, v2.value, v3.value, v4.value];
-}
-
-function show() {
+function show(arr) {
   main.appendChild(showArray);
 
   showArray.setAttribute("class", "showArray");
 
-  showArray.innerHTML = `<h3>Array: ${array}</h3>`;
+  showArray.innerHTML = `<h3>Array: ${arr}</h3>`;
 }
 
 function pop() {
-  popArray();
-  show();
+  array = [
+    Number(v1.value),
+    Number(v2.value),
+    Number(v3.value),
+    Number(v4.value),
+  ];
+  show(array);
 }
 
-function crescArray(items) {
-  let length = items.length;
+function crescArray() {
+  array = [
+    Number(v1.value),
+    Number(v2.value),
+    Number(v3.value),
+    Number(v4.value),
+  ];
+  let length = array.length;
   for (let i = 0; i < length; i++) {
     for (let j = 0; j < length - i - 1; j++) {
-      if (items[j] > items[j + 1]) {
-        let tmp = items[j];
-        items[j] = items[j + 1];
-        items[j + 1] = tmp;
+      if (array[j] > array[j + 1]) {
+        let tmp = array[j];
+        array[j] = array[j + 1];
+        array[j + 1] = tmp;
       }
     }
   }
 
-  show();
+  show(array);
 }
 
 function invertArray() {
-  popArray();
-  array;
+  array = [
+    Number(v1.value),
+    Number(v2.value),
+    Number(v3.value),
+    Number(v4.value),
+  ];
 
-  show();
+  let newArray = [array[3], array[2], array[1], array[0]];
+
+  show(newArray);
 }
