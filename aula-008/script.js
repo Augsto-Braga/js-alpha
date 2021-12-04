@@ -107,18 +107,18 @@ function race(maxLaps) {
 
     result.setAttribute("class", "result");
 
-    result.innerHTML = `O vencedor da corrida foi o Piloto 1 vencendo ${pilot1win} das ${laps} voltas!`;
+    result.innerHTML = `O vencedor da corrida foi o Pedro vencendo ${pilot1win} das ${laps} voltas!`;
   } else if (pilot1win < pilot2win && pilot2win > pilot3win) {
     main.appendChild(result);
 
     result.setAttribute("class", "result");
 
-    result.innerHTML = `O vencedor da corrida foi o Piloto 2 vencendo ${pilot2win} das ${laps} voltas!`;
+    result.innerHTML = `O vencedor da corrida foi o Juca vencendo ${pilot2win} das ${laps} voltas!`;
   } else if (pilot1win < pilot3win && pilot2win < pilot3win) {
     main.appendChild(result);
 
     result.setAttribute("class", "result");
 
-    result.innerHTML = `O vencedor da corrida foi o Piloto 3 vencendo ${pilot3win} das ${laps} voltas!`;
+    result.innerHTML = `O vencedor da corrida foi a Edna vencendo ${pilot3win} das ${laps} voltas!`;
   }
 }
