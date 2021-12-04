@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Exercício Corrida</title>
+  </head>
+  <body>
+    <header>
+      <h1>Jogo de corrida!</h1>
+    </header>
+    <main>
+      <section>
+        <div class="content" id="pedro">
+          <h2>Pedro</h2>
+          <button id="btn1" onclick="createCar(pilot1)">Gerar Carro</button>
+        </div>
+        <div class="content" id="juca">
+          <h2>Juca</h2>
+          <button id="btn2" onclick="createCar(pilot2)">Gerar Carro</button>
+        </div>
+        <div class="content" id="edna">
+          <h2>Edna</h2>
+          <button id="btn3" onclick="createCar(pilot3)">Gerar Carro</button>
+        </div>
+      </section>
+      <div class="laps" hidden>
+        <h2>Quantidade de voltas da corrida</h2>
+        <div class="buttons">
+          <button onclick="race(10)">10 voltas</button>
+          <button onclick="race(70)">70 voltas</button>
+          <button onclick="race(160)">160 voltas</button>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
