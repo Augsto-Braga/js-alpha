@@ -28,6 +28,24 @@ let pilot3 = {
   button: "btn3",
 };
 
+const pop = {
+  min: [110, 130],
+  max: [180, 200],
+  drift: [3, 4],
+};
+
+const sport = {
+  min: [125, 145],
+  max: [195, 215],
+  drift: [2, 3],
+};
+
+const superSport = {
+  min: [140, 160],
+  max: [210, 230],
+  drift: [1, 1.75],
+};
+
 let raceOk = [];
 
 let pilot1win = 0;
@@ -49,19 +67,22 @@ function createCar(pilot) {
 
   if (typeOf <= 5) {
     pilot.carType = "Super Sport";
-    pilot.minSpeed = randomIntNumber(140, 160);
-    pilot.maxSpeed = randomIntNumber(210, 230);
-    pilot.drift = randomNumber(1, 1.75).toFixed(2);
+    pilot.minSpeed = randomIntNumber(superSport.min[0], superSport.min[1]);
+    pilot.maxSpeed = randomIntNumber(superSport.max[0], superSport.max[1]);
+    pilot.drift = randomNumber(
+      superSport.drift[0],
+      superSport.drift[1]
+    ).toFixed(2);
   } else if (typeOf > 5 && typeOf <= 40) {
     pilot.carType = "Sport";
-    pilot.minSpeed = randomIntNumber(125, 145);
-    pilot.maxSpeed = randomIntNumber(195, 215);
-    pilot.drift = randomNumber(2, 3).toFixed(2);
+    pilot.minSpeed = randomIntNumber(sport.min[0], sport.min[1]);
+    pilot.maxSpeed = randomIntNumber(sport.max[0], sport.max[1]);
+    pilot.drift = randomNumber(sport.drift[0], sport.drift[1]).toFixed(2);
   } else {
     pilot.carType = "Popular";
-    pilot.minSpeed = randomIntNumber(110, 130);
-    pilot.maxSpeed = randomIntNumber(180, 200);
-    pilot.drift = randomNumber(3, 4).toFixed(2);
+    pilot.minSpeed = randomIntNumber(pop.min[0], pop.min[1]);
+    pilot.maxSpeed = randomIntNumber(pop.max[0], pop.max[1]);
+    pilot.drift = randomNumber(pop.drift[0], pop.drift[1]).toFixed(2);
   }
 
   const button = document.getElementById(pilot.button);
