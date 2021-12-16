@@ -7,8 +7,8 @@ const tableIndex = document.getElementById("1");
 const tableName = document.getElementById("2");
 const tableDate = document.getElementById("3");
 const tablePrice = document.getElementById("4");
-const tableDelay = document.getElementById("5");
-const tableFees = document.getElementById("6");
+const tableFees = document.getElementById("5");
+const tableTotal = document.getElementById("6");
 
 const clients = [];
 
@@ -33,8 +33,6 @@ function calculateFees() {
   const today = new Date();
   const timeInOneDay = 1000 * 60 * 60 * 24;
 
-  let clientsAtt = [];
-
   clients.map((client) => {
     let diff = today - client.dueDate;
 
@@ -51,7 +49,12 @@ function calculateFees() {
       fee = fixedFee + variableFee;
     }
 
-    tableDelay.innerHTML += `<p>${diffInDays}</p>`;
+    let total = client.buyPrice + fee;
+
     tableFees.innerHTML += `<p>R$${fee.toFixed(2)}</p>`;
+    tableTotal.innerHTML += `<p>R$${total.toFixed(2)}</p>`;
+
+    client.fee = fee;
+    client.total = total;
   });
 }
