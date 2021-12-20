@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Exercício Juros</title>
+  </head>
+  <body>
+    <header>
+      <h1>Calculadora de Juros</h1>
+    </header>
+    <main>
+      <aside>
+        <div class="asideHeader">
+          <h2>Compra</h2>
+        </div>
+        <h3>Nome do Cliente</h3>
+        <input type="text" id="clientName" />
+        <h3>Vencimento</h3>
+        <input type="date" id="buyDate" />
+        <h3>Valor da Nota</h3>
+        <input type="number" id="price" />
+        <button id="insert" onclick="insertData()">Inserir</button>
+        <button id="calculate" onclick="calculateFees()">Calcular Juros</button>
+        <h3>filtros</h3>
+        <button onclick="minValueFilter()">Menor Valor</button>
+        <button>Maior Valor</button>
+      </aside>
+      <div class="content">
+        <div class="contentHeader">
+          <h2>Entradas</h2>
+        </div>
+        <div class="contentData">
+          <div class="data" id="1">
+            <div class="dataHeader"><h3>#</h3></div>
+          </div>
+
+          <div class="data" id="2">
+            <div class="dataHeader"><h3>Cliente</h3></div>
+          </div>
+
+          <div class="data" id="3">
+            <div class="dataHeader"><h3>Vencimento</h3></div>
+          </div>
+
+          <div class="data" id="4">
+            <div class="dataHeader"><h3>Valor</h3></div>
+          </div>
+
+          <div class="data" id="5">
+            <div class="dataHeader"><h3>Juros</h3></div>
+          </div>
+
+          <div class="data" id="6">
+            <div class="dataHeader"><h3>Valor total</h3></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="total"><h3>Total</h3></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

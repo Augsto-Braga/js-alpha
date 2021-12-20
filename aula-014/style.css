@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+}
+
+main aside {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  border: 2px solid black;
+}
+
+main aside .asideHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+main aside input {
+  padding: 10px 0;
+  margin: 10px 0;
+}
+
+main aside button {
+  padding: 10px 0;
+  margin: 10px 0;
+}
+
+main .content {
+  padding: 30px;
+  border: 2px solid black;
+}
+
+main .content .contentHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+main .content .contentData {
+  display: flex;
+}
+
+main .content .contentData .data {
+  text-align: center;
+  border: 1px solid black;
+}
+
+main .content .contentData .data .dataHeader {
+  width: 200px;
+  height: 30px;
+  border-bottom: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .content .contentData .data p {
+  border-bottom: solid 1px black;
+}
+
+.total {
+  width: 150px;
+  height: 30px;
+  padding: 10px;
+  margin-left: 1347px;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+}
+
+section {
+  margin: 50px 0 0 0;
+  width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+section .clientContent {
+  width: 300px;
+  height: 300px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid black;
+  text-align: center;
+}
