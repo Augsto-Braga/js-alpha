@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background-color: blue;
+  color: white;
+  transition: 0.5s;
+}
+
+button:hover {
+  background-color: rgb(0, 0, 112);
+}
+
+body {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  width: 600px;
+  height: 800px;
+  background-color: rgb(106, 155, 255);
+}
+
+main .mheader {
+  height: 60px;
+  margin: 20px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .inputs {
+  display: flex;
+  justify-content: space-around;
+}
+
+main .inputs .campos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .inputs p {
+  width: 500px;
+  height: 50px;
+  border: none;
+  background-color: rgb(167, 196, 255);
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .allButtons {
+  display: flex;
+}
+
+main .allButtons .numberButtons {
+  width: 400px;
+  margin: 20px 0 0 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main .allButtons .numberButtons button {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+
+main .allButtons .numberButtons #num0 {
+  width: 220px;
+}
+
+main .allButtons .operationButtons {
+  margin: 20px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main .allButtons .operationButtons button {
+  margin: 10px;
+  width: 120px;
+  height: 80px;
+}
+
+main .results {
+  margin: 20px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .results .rheader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .results .content {
+  width: 400px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(167, 196, 255);
+  border: 1px solid black;
+  border-radius: 8px;
+  font-size: 28px;
+}
