@@ -6,6 +6,8 @@
 button {
   background-color: blue;
   color: white;
+  font-size: 28px;
+  font-weight: bolder;
   transition: 0.5s;
 }
 
