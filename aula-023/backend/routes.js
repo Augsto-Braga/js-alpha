@@ -1,5 +1,3 @@
-const clients = require("./database");
-
 class Routes {
   calculateRoute(req, res) {
     const op1 = Number(req.query.op1);
