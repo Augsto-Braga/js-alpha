@@ -10,8 +10,8 @@ $(document).ready(function () {
       $("#search").click(() => {
         coins.forEach((coin) => {
           if (coin[0] == $("select").val()) {
-            $("section").append(`<section>
-                                <div class="items">
+            $("section").removeAttr("hidden");
+            $("section").html(`<div class="items">
                                   <div class="itemKey">
                                     <h3>Nome</h3>
                                   </div>
@@ -34,8 +34,7 @@ $(document).ready(function () {
                                   <div class="itemContent">
                                     <h3>${coin[1].ask}</h3>
                                   </div>
-                                </div>
-                                </section>`);
+                                </div>`);
           }
         });
       });
