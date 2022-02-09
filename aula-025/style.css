@@ -1,0 +1,83 @@
+:root {
+  --gray: rgb(87, 87, 87);
+  --light-gray: rgb(209, 209, 209);
+  --dark-gray: rgb(53, 53, 53);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(196, 230, 164);
+}
+
+header {
+  width: 100%;
+  height: 150px;
+  background-color: rgb(49, 58, 40);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--light-gray);
+  border-bottom: 5px solid white;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main #selectCoin {
+  margin-top: 20px;
+  display: flex;
+}
+
+main #selectCoin select {
+  margin: 0 0 0 20px;
+  background-color: var(--gray);
+  color: white;
+  transition: 500ms;
+}
+
+main #selectCoin select:hover {
+  background-color: var(--dark-gray);
+}
+
+main #selectCoin button {
+  margin: 0 0 0 20px;
+  background-color: var(--gray);
+  color: white;
+  transition: 500ms;
+}
+
+main #selectCoin button:hover {
+  background-color: var(--dark-gray);
+}
+
+main section {
+  margin-top: 50px;
+  width: 30%;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+}
+
+main section .items {
+  display: flex;
+  border-bottom: 1px solid black;
+}
+
+main section .items .itemKey {
+  width: 50%;
+  padding: 15px;
+  border-right: 1px solid black;
+}
+
+main section .items .itemContent {
+  width: 100%;
+  padding: 15px;
+}
