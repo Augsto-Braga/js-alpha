@@ -6,7 +6,7 @@ class Routes {
 
     function Calculator() {
       function add(op1, op2) {
-        return Number(op1 + op2);
+        return op1 + op2;
       }
 
       function sub(op1, op2) {
