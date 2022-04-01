@@ -16,11 +16,7 @@ async function registerFunction() {
 
   const response = await fetch("http://localhost:3333/register", options);
 
-  if (response.ok === false) {
-    console.log("Usuário já cadastrado!");
-  } else {
-    console.log("Usuário cadastrado com sucesso!");
-  }
+  console.log(await response.json());
 }
 
 registerButton.addEventListener("click", registerFunction);

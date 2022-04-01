@@ -7,7 +7,7 @@ class Routes {
 
     users.forEach((user) => {
       if (user.username == currentUser.username) {
-        throw new Error({ error: "Usuário já cadastrado!" });
+        res.json("Usuário já cadastrado!");
       } else {
         const token = crypto.randomUUID();
 
@@ -19,7 +19,7 @@ class Routes {
 
         users.push(newUser);
         console.log(users);
-        res.send("Usuário cadastrado com sucesso!");
+        res.json("Usuário cadastrado com sucesso!");
       }
     });
   }
