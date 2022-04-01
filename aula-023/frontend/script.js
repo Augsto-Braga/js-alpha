@@ -24,7 +24,7 @@ class Calculator {
     operator.innerHTML = "";
   }
 
-  setOperator2() {
+  async setOperator2() {
     operator2 = Number(operator.innerHTML);
     operator.innerHTML = "";
 
@@ -35,16 +35,14 @@ class Calculator {
     };
 
     if (operator1 === undefined) {
-      fetch(`http://localhost:3333/`, options).then((response) =>
-        response.json().then((data) => (content.innerHTML = data))
-      );
+      const response = await fetch(`http://localhost:3333/`, options);
+      content.innerHTML = await response.json();
     } else {
-      fetch(
+      const response = await fetch(
         `http://localhost:3333/?op1=${operator1}&op2=${operator2}&operation=${operation}`,
         options
-      ).then((response) =>
-        response.json().then((data) => (content.innerHTML = data))
       );
+      content.innerHTML = await response.json();
     }
   }
 }
