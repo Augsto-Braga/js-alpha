@@ -5,7 +5,7 @@ const passwordInput = document.getElementById("password");
 async function registerFunction() {
   const options = {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
+    headers: new Headers({ "Content-Type": "application/json" }),
     mode: "cors",
     cache: "default",
     body: JSON.stringify({
